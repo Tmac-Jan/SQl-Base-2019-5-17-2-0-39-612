@@ -21,7 +21,7 @@ INSERT INTO `subject` VALUES ('1002', '数学', '刘老师', '本次考试比较
 
 
 CREATE table `score` (
-`id` varchar(32) NOT NULL PRIMARY key,
+`id` varchar(32) int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
 `student_id` varchar(32) NOT NULL,
 `subject_id` varchar(32) NOT NULL,
 `score` decimal(2,1) NOT NULL,
